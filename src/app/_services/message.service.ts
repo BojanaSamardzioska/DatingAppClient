@@ -42,7 +42,7 @@ export class MessageService {
             messages.forEach(message => {
               if(!message.dateRead) {
                 message.dateRead = new Date(Date.now());
-              }
+              } 
             });
             this.messagesThreadSource.next([...messages]);
           }
